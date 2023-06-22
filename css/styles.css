@@ -718,11 +718,11 @@ height: 40px;
 .icon-team{
     fill: var(--fill-color);
 }
-.foot-logo{
+/* .foot-logo{
     display: flex;
     display: block;
-    /* align-items: baseline; */
-}
+    align-items: baseline;
+} */
 
 .social-foot{
     margin-top: 72px;
