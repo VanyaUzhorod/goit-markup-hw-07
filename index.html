@@ -10,14 +10,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/styles.css">
+<link rel="stylesheet" href="./css/media.css">
 </head>
 <body>
     <!-- Шапка -->
-     <!-- <header class="page-header">
+     <header class="page-header">
 <div class="container main-nav">
     <nav class="logo-nav">
         <a class="logo-link link" href="./index.html">Web<span class="span-header">Studio</span></a>
-       
             <ul class="site-nav list">
                 <li class="items"><a class="menu-link link current" href="./index.html">Studio</a></li>
                 <li class="items"><a class="menu-link link" href="./portfolio.html">Portfolio</a></li>
@@ -30,8 +30,73 @@
             <li class="items"><a class="link-mail link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
             </ul>
         </address>
-</div>
-    </header> -->
+        <button type="button" class="burger-menu" data-menu-open>
+            <svg  width="32" height="22" aria-label="mobile-menu">
+                <use href="./images/icons.svg#icon-charm-menu-hamburger"></use>
+            </svg>
+        </button>
+        </div>
+        <div class="mob-menu is-hidden" data-menu>
+                <div>
+                    <button type="button" class="burger-menu-close" data-menu-close>
+                        <svg width="8" height="8">
+                            <use href="./images/icons.svg#icon-close-black"></use>
+                        </svg>
+                    </button>
+                    <nav class="logo-nav">
+                            <ul class="mob-menu-list list">
+                                <li class="mob-menu-item"><a class="mob-menu-link link current" href="./index.html">Studio</a></li>
+                                <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a></li>
+                                <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+                            </ul>
+                    </nav>
+                </div>
+                <div>
+                    <ul class="mob-menu-li list">
+                        <li class="mob-menu-tel"><a class="mob-menu-tel-link link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    <li class="mob-menu-items"><a class="mob-menu-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="list-icon list">
+                        <li class="icon-item">
+                            <a class="a-icons link" href=""
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="icon-team" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram2"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="a-icons link" href=""
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="icon-team" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="a-icons link" href=""
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="icon-team" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="icon-item">
+                            <a class="a-icons link" href=""
+                            target="_blank"
+                            rel="noopener noreferrer">
+                            <svg class="icon-team" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin1"></use>
+                            </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+    </header>
         <!-- Герой -->
         <main>
             <section class="section">
@@ -90,14 +155,13 @@ problem to walk away with the perfect and creative solution. </p>
                     <h2 class="heading">What are we doing</h2>
                     <ul class="list foto-item">
                         <li class="foto-works">
-                            <img src="./images/img1.jpg" alt="computer screen
-                            " width="360">
+                            <img srcset="./images/img1.jpg 1x,./images/img7@2x.jpg 2x" src="./images/img1.jpg" alt="computer screen" width="360">
                         </li>
                         <li class="foto-works">
-                            <img src="./images/img2.jpg" alt="interactive phone screen" width="360">
+                            <img srcset="./images/img2.jpg 1x,./images/img5@2x.jpg 2x" src="./images/img2.jpg" alt="interactive phone screen" width="360">
                         </li>
                         <li class="foto-works">
-                            <img src="./images/img3.jpg" alt="laptop with phone in hand" width="360">
+                            <img srcset="./images/img3.jpg 1x,./images/img6@2x.jpg 2x" src="./images/img3.jpg" alt="laptop with phone in hand" width="360">
                         </li>
                     </ul>
                 </div>
@@ -107,7 +171,7 @@ problem to walk away with the perfect and creative solution. </p>
             <h2 class="headline-team">Our Team</h2>
             <ul class="list list-team">
                 <li class="bgr-text">
-                    <img src="./images/img5.jpg" alt="a man with a beard" width="264">
+                    <img srcset="./images/img5.jpg 1x,./images/img@2x.jpg 2x" src="./images/img5.jpg" alt="a man with a beard" width="264">
                     <div class="worker">
                         <h3 class="subject">Mark Guerrero</h3>
                     <p class="item">Product Designer</p>
@@ -152,7 +216,7 @@ problem to walk away with the perfect and creative solution. </p>
                     </div>
                     </li>
                 <li class="bgr-text">
-                    <img class="" src="./images/img4.jpg" alt="
+                    <img srcset="./images/img4.jpg 1x,./images/img2@2x.jpg 2x" class="" src="./images/img4.jpg" alt="
                     the man smiles" width="264">
                     <div class="worker">
                         <h3 class="subject">Tom Ford</h3>
@@ -198,7 +262,7 @@ problem to walk away with the perfect and creative solution. </p>
                     </div>
                 </li>
                 <li class="bgr-text">
-                    <img src="./images/img7.jpg" alt="a woman in a pink sweater" width="264">
+                    <img srcset="./images/img7.jpg 1x,./images/img3@2x.jpg 2x" src="./images/img7.jpg" alt="a woman in a pink sweater" width="264">
                     <div class="worker">
                         <h3 class="subject">Camila Garcia</h3>
                     <p class="item">Marketing</p>
@@ -243,7 +307,7 @@ problem to walk away with the perfect and creative solution. </p>
                     </div>
                 </li>
                 <li class="bgr-text">
-                    <img src="./images/img6.jpg#icon-instagram2" alt="
+                    <img srcset="./images/img6.jpg 1x,./images/img4@2x.jpg 2x" src="./images/img6.jpg" alt="
                     a man with a beard is smiling" width="264">
                     <div class="worker">
                         <h3 class="subject">Daniel Wilson</h3>
@@ -349,7 +413,7 @@ problem to walk away with the perfect and creative solution. </p>
             <a class="logo-link logo-foot " href="./index.html">Web<span class="footer-span">Studio</span></a>
             <p class="item-foot">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>
         </div>
-        <div>
+        <div class="social-media">
             <p class="social-foot">Social media</p>
             <ul class="icon-list-icon list">
                 <li class="icon-item">
@@ -473,5 +537,7 @@ problem to walk away with the perfect and creative solution. </p>
 </div>
 </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+    
 </body>
 </html>
